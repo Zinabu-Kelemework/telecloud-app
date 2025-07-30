@@ -1,0 +1,44 @@
+1. For Amazon linux 2
+
+> curl -sL https://rpm.nodesource.com/setup_18.x | sudo bash -
+> sudo yum install -y nodejs
+> node -v
+
+2. For ubuntu
+
+> curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+> sudo apt install -y nodejs
+
+3. Upload Your App
+Option 1: Use scp from your local terminal:
+
+> scp -i your-key.pem app.js package.json ec2-user@your-ec2-ip:~
+
+Option 2: Clone from GitHub if uploaded:
+git clone https://github.com/Zinabu-Kelemework/evangadi-node-app-AWS
+> 
+> cd evangadi-node-app-AWS
+
+4.Install Dependencies & Run
+> npm install
+> node app.js
+
+5.(Optional) Run in Background with pm2
+
+sudo npm install -g pm2
+pm2 start app.js
+pm2 startup
+pm2 save
+
+Summary
+
+| Task         | Command                             |
+| ------------ | ----------------------------------- |
+| Launch EC2   | AWS Console                         |
+| Connect      | `ssh -i key.pem ec2-user@ip or clon from git`        |
+| Install Node | `curl` + `yum/apt install`          |
+| Upload Code  | `scp` or `git clone`                |
+| Start App    | `node app.js` or `pm2 start app.js` |
+| Access App   | `http://EC2-IP:3000`                |
+
+

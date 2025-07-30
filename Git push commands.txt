@@ -1,0 +1,23 @@
+# 1. Initialize Git
+> git init
+
+# 2. Add your files
+> git add .
+
+# 3. Commit with a message
+> git commit -m "Initial commit - Evangadi Node app"
+
+# 4. Link your GitHub repo (replace with your actual URL)
+> git remote add origin https://github.com/YOUR_USERNAME/evangadi-node-app.git
+
+# 5. Push to GitHub
+> git push -u origin master  # or main, if your repo uses main branch
+
+//Replace YOUR_USERNAME with your GitHub username.
+
+✅ Confirm
+Go to your GitHub repo URL in the browser. You should now see:
+
+app.js
+
+package.json
