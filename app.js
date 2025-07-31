@@ -38,8 +38,8 @@ const server = http.createServer((req, res) => {
       </style>
     </head>
     <body>
-      <h1>well come to telecloud, telecloud  is the Best public cloud provider</h1>
-      <footer>🚀 Powered by Node.js | Evangadi Academy</footer>
+      <h1>well come to telecloud, telecloud LMS APP</h1>
+      <footer>🚀 Powered by Node.js | Telecloud Academy</footer>
     </body>
     </html>
   `;
